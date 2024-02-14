@@ -1,0 +1,11 @@
+---
+services:
+  app:
+    build: .
+    volumes:
+    - type: bind
+      source: ./files
+      target: /app/files
+    ports:
+    - "127.0.0.1:3000:3000"
+
